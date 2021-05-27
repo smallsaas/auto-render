@@ -72,13 +72,16 @@
 | labelWidth    | 标签宽度                            | 100      |
 | disabled      | 是否禁用表单 true \| false          | false    |
 | formBtns      | 是否显示提交按钮 true \| false      | false    |
+| saveApi      | 保存API地址，为空则为默认地址      | false    |
+| loadApi      | 加载API地址，为空则为默认地址      | false    |
+	
 
 ##### 4.2 `colFormItem`
 
 | 属性            | 说明                       | 默认值 |
 | --------------- | -------------------------- | ------ |
-| **config**      | 控件配置信息               | {}     |
-| **slot**        | 控件配置信息               | {}     |
+| __config__      | 控件配置信息               | {}     |
+| __slot__        | 控件配置信息               | {}     |
 | placeholder     | 占位提示符                 |        |
 | style           | 控件样式                   |        |
 | clearable       | 能否清空 true \| false     | true   |
@@ -88,13 +91,13 @@
 | show-word-limit | 显示输入统计 true \| false | false  |
 | readonly        | 是否只读 true \| false     | false  |
 | disabled        | 是否禁用 true \| false     | false  |
-| **vModel**      | 绑定 v-model 的字段名      |        |
+| __vModel__      | 绑定 `v-model` 的字段名      |        |
 
 ##### 4.3 `rowFormItem`
 
 | 属性       | 说明                                                             | 默认值  |
 | ---------- | ---------------------------------------------------------------- | ------- |
-| **config** | 控件配置信息                                                     | {}      |
+| __config__ | 控件配置信息                                                     | {}      |
 | type       | 布局模式 default \| flex                                         | default |
 | justify    | 水平排列 start \| end \| center \| space-around \| space-between | start   |
 | align      | 垂直排列 top \| middle \| bottom                                 | top     |
