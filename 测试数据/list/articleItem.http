@@ -1,0 +1,88 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+## 动态列表 
+
+### 获取动态列表设计数据 
+GET {{endpoint}}/form?id=1003
+
+
+### 保存动态列表
+POST {{endpoint}}/form/1003
+content-type: application/json
+
+{
+    "loadApi": "https://api.mock.smallsaas.cn/data?id=1003",
+    "itemNavigation": "/articleDetail/index?id=&title",
+    "tabConfig":
+     {
+       "field":"type",
+       "show": false,
+       "list":[
+          {
+              "name":"全部",
+              "value":"0"
+          },
+          {
+              "name":"时尚搭配",
+              "value":"100"
+          },
+          {
+             "name":"行业咨询",
+             "value":"200"
+          }
+       ]
+    },
+    "response":
+    {
+        "list":"type.list",
+        "total":"type.total"
+    },
+    "request":
+    {
+       "fixed":"type",
+       "default":
+        {
+           "type":"0"
+        },
+       "pn":"pageNo",
+       "ps":"pageSize"
+    },
+    "itemModule":
+    {
+        "type":"card-component",
+        "name":"ArticleItem"
+    }
+}
+
+## 动态列表
+
+### 获取动态列表数据
+GET {{endpoint}}/data?id=1003 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存动态列表数据
+POST {{endpoint}}/data/1003 HTTP/1.1
+content-type: application/json
+
+{
+    "type": {
+      "list": [
+        {
+          "type": "100",
+          "title": "的撒开发和建设的规100",
+          "desc": "阿迪舒服哈森岛宽晃发的颂古非今阿萨德个发货速度发定时发送地方",
+          "time": "2020-01-01",
+          "img": "https://66861.s81i.faiusr.com/4/103/AFEIrYoEEAQYACDm84HWBSiN0KWQAjCKAjjHAUBn.png"
+        },
+        {
+          "type": "200",
+          "title": "的撒开发和建设的规200",
+          "desc": "阿迪舒服哈森岛宽晃发的颂古非今阿萨德个发货速度发定时发送地方",
+          "time": "2020-01-01",
+          "img": "https://66861.s81i.faiusr.com/4/103/AFEIrYoEEAQYACDm84HWBSiN0KWQAjCKAjjHAUBn.png"
+        }
+      ],
+      "total": 2
+    }
+  }

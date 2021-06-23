@@ -1,0 +1,69 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+## 动态列表主页
+# 跳转路由
+# 前往各个子项
+# 本页只提供路由跳转功能
+### 获取列表主页数据
+GET {{endpoint}}/form?id=1001
+content-type: application/json
+
+
+### 保存列表主页数据
+POST {{endpoint}}/form/1001
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"auto_list_page",
+    "title":"自动列表子项选择",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"navlist",
+            "key":"1172222-ad44-55ea-ca11-4225534d52b7",
+            "name":"自动列表子项",
+            "container":{
+            "grid-template-columns":"repeat(1, 100%)"
+            }
+        }
+    ],
+    "moduleData":{
+        "1172222-ad44-55ea-ca11-4225534d52b7":{
+            "itemModule":{
+              "name":"cardListItem"
+           },
+             "navList": [
+              {
+                "svg":"record",
+                "title":"StateItem",
+                "nav":"/pages/test/list/stateItem",
+                "container":{
+                }
+              },
+            {
+                "svg":"record",
+                "title":"ArticleItem",
+                "nav":"/pages/test/list/articleItem",
+                "container":{
+                }
+              },
+            {
+                "svg":"record",
+                "title":"SelfInspectionRecordItem",
+                "nav":"/pages/test/list/selfInspectionRecordItem",
+                "container":{
+                }
+              }
+            ]
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+## 动态列表主页
+# 跳转路由
+# 前往各个子项
+# 本页只提供路由跳转功能
+### 获取列表主页数据
+GET {{endpoint}}/form?id=1021
+content-type: application/json
+
+
+### 保存列表主页数据
+POST {{endpoint}}/form/1021
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"auto_list_page",
+    "title":"页面组件展示",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"navlist",
+            "key":"1172222-ad44-55ea-ca11-4225534d52b7",
+            "name":"页面组件",
+            "container":{
+            "grid-template-columns":"repeat(2, 50%)"
+            }
+        }
+    ],
+    "moduleData":{
+        "1172222-ad44-55ea-ca11-4225534d52b7":{
+            "itemModule":{
+              "name":"cardListItem"
+           },
+             "navList": [
+              {
+                "svg":"record",
+                "title":"autoform",
+                "nav":"/pages/test/pages/autoform",
+                "container":{
+                }
+              },
+            {
+                "svg":"record",
+                "title":"autolist",
+                "nav":"/pages/test/pages/autolist",
+                "container":{
+                }
+              },
+            {
+                "svg":"record",
+                "title":"banner",
+                "nav":"/pages/test/pages/banner",
+                "container":{
+                }
+              },
+              {
+                "svg":"record",
+                "title":"navlist",
+                "nav":"/pages/test/pages/navlist",
+                "container":{
+                }
+              },
+              {
+                "svg":"record",
+                "title":"boxList",
+                "nav":"/pages/test/pages/boxlist",
+                "container":{
+                }
+              },
+              {
+                "svg":"record",
+                "title":"autopage",
+                "nav":"/pages/test/pages/autopage",
+                "container":{
+                }
+              }
+            ]
+        }
+    }
+}

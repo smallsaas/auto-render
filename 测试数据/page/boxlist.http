@@ -1,0 +1,56 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+## 动态列表主页
+# 跳转路由
+# 前往各个子项
+# 本页只提供路由跳转功能
+### 获取列表主页数据
+GET {{endpoint}}/form?id=1026
+content-type: application/json
+
+
+### 保存列表主页数据
+POST {{endpoint}}/form/1026
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"auto_list_page",
+    "title":"boxList",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type": "boxList",
+            "name": "boxList",
+            "key": "851344s-ad44-55ea-ca11-4225534d52b7",
+            "container":{
+            }
+        }
+    ],
+    "moduleData":{
+        "851344s-ad44-55ea-ca11-4225534d52b7":{
+            "navList": [
+                {
+                    "number":500,
+                    "title":"在线人数"
+                },
+                {
+                    "number":10522,
+                    "title":"已注册人数"
+                },
+                {
+                    "number":600,
+                    "title":"播放次数"
+                }
+            ]
+        }
+    }
+}
