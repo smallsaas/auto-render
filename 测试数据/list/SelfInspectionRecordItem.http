@@ -1,0 +1,90 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+## 动态列表 
+
+### 获取动态列表设计数据 
+GET {{endpoint}}/form?id=1004
+
+
+### 保存动态列表
+POST {{endpoint}}/form/1004
+content-type: application/json
+
+{
+    "loadApi": "https://api.mock.smallsaas.cn/data?id=1004",
+    "itemNavigation": "/articleDetail/index?id=&title",
+    "tabConfig":
+     {
+       "field":"type",
+       "show": false,
+       "list":[
+          {
+              "name":"全部",
+              "value":"0"
+          },
+          {
+              "name":"时尚搭配",
+              "value":"100"
+          },
+          {
+             "name":"行业咨询",
+             "value":"200"
+          }
+       ]
+    },
+    "response":
+    {
+        "list":"type.list",
+        "total":"type.total"
+    },
+    "request":
+    {
+       "fixed":"type",
+       "default":
+        {
+           "type":"0"
+        },
+       "pn":"pageNo",
+       "ps":"pageSize"
+    },
+    "itemModule":
+    {
+        "type":"card-component",
+        "name":"SelfInspectionRecordItem"
+    }
+}
+
+## 动态列表
+
+### 获取动态列表数据
+GET {{endpoint}}/data?id=1004 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存动态列表数据
+POST {{endpoint}}/data/1004 HTTP/1.1
+content-type: application/json
+
+{
+    "type": {
+      "list": [
+        {
+          "type": "100",
+          "title": "2020年第一季度",
+          "startTime": "2020-01-01",
+          "endTime": "2020-03-31",
+          "submitTime": "2020-3-25 12:12:12",
+          "status": "pass"
+        },
+        {
+          "type": "200",
+          "title": "2020年第二季度",
+          "startTime": "2020-01-01",
+          "endTime": "2020-05-31",
+          "submitTime": "2020-3-25 12:12:12",
+          "status": "failed"
+        }
+      ],
+      "total": 3
+    }
+  }

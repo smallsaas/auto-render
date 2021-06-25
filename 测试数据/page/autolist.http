@@ -1,0 +1,84 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+## 动态列表主页
+# 跳转路由
+# 前往各个子项
+# 本页只提供路由跳转功能
+### 获取列表主页数据
+GET {{endpoint}}/form?id=1023
+content-type: application/json
+
+
+### 保存列表主页数据
+POST {{endpoint}}/form/1023
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"auto_list_page",
+    "title":"页面组件展示",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autolist",
+            "key":"1172222-ad44-55ea-ca11-4225534d52b7",
+            "name":"页面组件",
+            "container":{
+            "grid-template-columns":"repeat(2, 50%)"
+            }
+        }
+    ],
+    "moduleData":{
+        "1172222-ad44-55ea-ca11-4225534d52b7":{
+            "loadApi": "https://api.mock.smallsaas.cn/data?id=1003",
+            "itemNavigation": "/articleDetail/index?id=&title",
+            "tabConfig":
+            {
+            "field":"type",
+            "show": false,
+            "list":[
+                {
+                    "name":"全部",
+                    "value":"0"
+                },
+                {
+                    "name":"时尚搭配",
+                    "value":"100"
+                },
+                {
+                    "name":"行业咨询",
+                    "value":"200"
+                }
+            ]
+            },
+            "response":
+            {
+                "list":"type.list",
+                "total":"type.total"
+            },
+            "request":
+            {
+            "fixed":"type",
+            "default":
+                {
+                "type":"0"
+                },
+            "pn":"pageNo",
+            "ps":"pageSize"
+            },
+            "itemModule":
+            {
+                "type":"card-component",
+                "name":"ArticleItem"
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+## State列表子项
+
+GET {{endpoint}}/form?id=1002
+content-type: application/json
+
+
+### 保存列表主页数据
+POST {{endpoint}}/form/1002
+content-type: application/json
+
+{
+        "loadApi":"https://api.mock.smallsaas.cn/data?id=1002",
+        "response":{
+              "list":"type.list",
+              "total":"type.total"
+          },
+          "itemNavigation": "/articleDetail/index?id=&title",
+          "tabConfig":{
+            "field":"type"
+          },
+          "response":{
+            "list":"type.list",
+            "total":"type.total"
+          },
+          "request":{
+            "fixed":"type",
+            "default":{
+              "type":"0"
+            },
+            "pn":"pageNo",
+            "ps":"pageSize"
+          },
+          "itemModule":{
+            "type":"custom_component",
+            "name":"StateItem"
+          }
+  }
+
+### 获取动态页面数据
+GET {{endpoint}}/data?id=1002 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存动态页面数据
+POST {{endpoint}}/data/1002 HTTP/1.1
+content-type: application/json
+
+{
+  "type":{
+      "list":[
+          {
+            "type":"100",
+            "url":"../../pages/test/cardtest",
+            "state":"enforcement",
+            "title":"安全出门检查",
+            "company":"北京海淀区体育局",
+            "start":"2021-03-30",
+            "end":"2021-04-05"
+          },
+          {
+            "type":"200",
+            "url":"../../pages/test/cardtest",
+            "state":"rectification",
+            "title":"安全出门检查",
+            "company":"北京海淀区体育局",
+            "start":"2021-03-30",
+            "end":"2021-04-05"
+          }
+        ],
+        "total": 2
+  }
+}
+

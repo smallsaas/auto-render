@@ -1,0 +1,52 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+## 动态列表主页
+# 跳转路由
+# 前往各个子项
+# 本页只提供路由跳转功能
+### 获取列表主页数据
+GET {{endpoint}}/form?id=1024
+content-type: application/json
+
+
+### 保存列表主页数据
+POST {{endpoint}}/form/1024
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"auto_list_page",
+    "title":"banner轮播图展示",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type": "banner",
+            "name": "轮播图",
+            "key": "851344s-ad44-55ea-ca11-4225534d52b7",
+            "container":{
+            }
+        }
+    ],
+    "moduleData":{
+        "851344s-ad44-55ea-ca11-4225534d52b7":{
+            "banners": [
+                {
+                    "img": "http://culturetv.hanyastar.com.cn/standard/pic/340/888/1418/30910_2015-05-09.jpg",
+                    "itemNavigation": "/?id=1"
+                },
+                {
+                    "img": "http://culturetv.hanyastar.com.cn/standard/pic/335/369/3854/54844_2017-02-28.jpg",
+                    "itemNavigation": "/?id=1"
+                }
+            ]
+        }
+    }
+}
