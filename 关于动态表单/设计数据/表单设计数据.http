@@ -1,0 +1,68 @@
+@endpoint = https://ai.hdqmjs.com
+
+# @ 注意：设计之前需要在项目中添加页面，新增的页面需要在page.json中添加
+# 格式：
+#{
+#   "path":"页面路径"
+#}
+# 附加属性请参考 https://uniapp.dcloud.io/collocation/pages
+
+### 获取表单设计数据
+GET {{endpoint}}/form?id=666666666
+
+
+### 提交表单设计数据 (所有属性) 部分属性为设计平台
+# 但均可用 可设计完成之后通过 "查看json" 来获取设计数据
+# https://r.zbsoft.top/form-generator 所用组件
+###
+POST {{endpoint}}/form/666666666
+Content-Type: application/json
+
+{
+  "fields": [{
+    "__config__": {
+      "label": "单行文本",
+      "labelWidth": null,
+      "showLabel": true,
+      "changeTag": true,
+      "tag": "el-input",
+      "tagIcon": "input",
+      "required": true,
+      "layout": "colFormItem",
+      "span": 24,
+      "document": "https://element.eleme.cn/#/zh-CN/component/input",
+      "regList": [{
+        "pattern": "/^1(3|4|5|7|8|9)\\d{9}$/",
+        "message": "手机号格式错误"
+      }]
+    },
+    "__slot__": {
+      "prepend": "",
+      "append": ""
+    },
+    "__vModel__": "mobile",
+    "placeholder": "请输入手机号",
+    "style": {
+      "width": "100%"
+    },
+    "clearable": true,
+    "prefix-icon": "el-icon-mobile",
+    "suffix-icon": "",
+    "maxlength": 11,
+    "show-word-limit": true,
+    "readonly": false,
+    "disabled": false
+  }],
+  "formRef": "elForm",
+  "formModel": "formData",
+  "size": "medium",
+  "labelPosition": "right",
+  "labelWidth": 100,
+  "formRules": "rules",
+  "gutter": 15,
+  "disabled": false,
+  "span": 24,
+  "formBtns": false,
+  "saveApi": "",
+  "loadApi": ""
+}
