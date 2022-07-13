@@ -13,7 +13,7 @@
 
 ```json
 {  
-            "loadAPI":"https://api.mock.smallsaas.cn/data",
+    "loadAPI":"https://api.mock.smallsaas.cn/data",
     "id":"12311",
     "field":"address",
     "itemModule":{
