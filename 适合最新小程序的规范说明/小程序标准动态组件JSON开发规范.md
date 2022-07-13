@@ -20,7 +20,7 @@
             "type":"autolist",//组件的类型
             "name":"",//部分组件支持使用name来使用组件头部标识
             "key":"6F9619FF-8B86-D011-B42D-00C04FC964FF",//组件对应moduleData中的key,一般为guid格式 也可设定其他格式
-            “container":{}//单独的组件布局 优先级大于moduleContainer
+            "container":{}//单独的组件布局 优先级大于moduleContainer
         }
     ],
     "moduleData":{//组件的数据，对应modules，不同组件的不同数据不一致
