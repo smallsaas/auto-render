@@ -57,7 +57,7 @@ content-type: application/json
             "itemModule":{
               "name":"cardListItem"
            },
-             "navList": [
+             "navlist": [
               {
                 "svg":"record",
                 "title":"record",
@@ -120,7 +120,7 @@ content-type: application/json
             "itemModule":{
                 "name":"MagicItem"
             },
-            "navList":[
+            "navlist":[
                 {
                     "title":"export",
                     "svg":{
@@ -231,7 +231,7 @@ content-type: application/json
             "itemModule":{
               "name":"subTitleCardItem"
            },
-            "navList": [
+            "navlist": [
               {
                 "svg":"enforcement",
                 "title":"enforcement",

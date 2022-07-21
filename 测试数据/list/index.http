@@ -41,7 +41,7 @@ content-type: application/json
             "itemModule":{
               "name":"cardListItem"
            },
-             "navList": [
+             "navlist": [
               {
                 "svg":"record",
                 "title":"StateItem",
