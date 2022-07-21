@@ -16,7 +16,7 @@ content-type: application/json
 {
     "version":"1",
     "name":"auto_list_page",
-    "title":"boxList",
+    "title":"boxlist",
     "pageStyle":{},
     "loadApi":"",
     "request":{
@@ -28,8 +28,8 @@ content-type: application/json
     },
     "modules":[
         {
-            "type": "boxList",
-            "name": "boxList",
+            "type": "boxlist",
+            "name": "boxlist",
             "key": "851344s-ad44-55ea-ca11-4225534d52b7",
             "container":{
             }
@@ -37,7 +37,7 @@ content-type: application/json
     ],
     "moduleData":{
         "851344s-ad44-55ea-ca11-4225534d52b7":{
-            "navList": [
+            "navlist": [
                 {
                     "number":500,
                     "title":"在线人数"

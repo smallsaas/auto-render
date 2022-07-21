@@ -25,7 +25,7 @@ content-type: application/json
     },
     "modules": [
       {
-        "type":"boxList",
+        "type":"boxlist",
         "name":"",
         "key":"q51477c6-cc66-d5v4-3322-1623488775885"
       },
@@ -63,7 +63,7 @@ content-type: application/json
     ],
     "moduleData": {
         "q51477c6-cc66-d5v4-3322-1623488775885": {
-            "navList": [
+            "navlist": [
                 {
                   "number":50,
                   "title":"被执法"
@@ -86,7 +86,7 @@ content-type: application/json
             "itemModule":{
               "name":"cardListItem"
            },
-            "navList": [
+            "navlist": [
               {
                 "svg":"map",
                 "title":"场馆导航",
@@ -166,7 +166,7 @@ content-type: application/json
           }
          },
         "cd814de4-34de-fa95-1049-1623416664592": {
-            "navList": [
+            "navlist": [
                 {
                     "title": "安全出口",
                     "nav": "/?id=1",

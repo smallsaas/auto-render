@@ -41,7 +41,7 @@ content-type: application/json
             "itemModule":{
               "name":"cardListItem"
            },
-             "navList": [
+             "navlist": [
               {
                 "svg":"record",
                 "title":"autoform",
@@ -72,7 +72,7 @@ content-type: application/json
               },
               {
                 "svg":"record",
-                "title":"boxList",
+                "title":"boxlist",
                 "nav":"/pages/test/pages/boxlist",
                 "container":{
                 }
