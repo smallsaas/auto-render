@@ -40,12 +40,6 @@ content-type: application/json
       {
         "type": "autolist",
         "tips": "动态列表组件",
-        "binding":
-        {
-          "list":"list",
-          "total":"total"
-        },
-        "bindingTarget": "data",
         "name":"待办",
         "key":"e59992z8-bb88-a788-9922-1623488775885",
         "container":{
@@ -143,15 +137,6 @@ content-type: application/json
               "list":"type.list",
               "total":"type.total"
           },
-          "itemNavigation": "/articleDetail/index?id=&title",
-          "tabConfig":{
-            "field":"type",
-            "show":true
-          },
-          "response":{
-            "list":"type.list",
-            "total":"type.total"
-          },
           "request":{
             "fixed":"type",
             "default":{
@@ -160,6 +145,11 @@ content-type: application/json
             "pn":"pageNo",
             "ps":"pageSize"
           },
+          "tabConfig":{
+            "field":"type",
+            "show":true
+          },
+          "itemNavigation": "/articleDetail/index?id=&title",
           "itemModule":{
             "type":"custom_component",
             "name":"StateItem"
