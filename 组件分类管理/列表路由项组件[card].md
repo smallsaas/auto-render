@@ -14,10 +14,11 @@
 
 | 组件名              | 组件                              | 组件参数说明                                                        |
 | ------------------ | --------------------------------- | ------------------------------------------------------------------ |
-| CommonSubjectItem  | 通用主题组件[标题,副标题,图片,标签,]  | `[avatar/icon/url, title, subtitle, count, tag, tags[], status, size]`  |
+| SubjectItem        | 通用主题组件[标题,副标题,图片,标签,] | `[avatar/icon/url, title, subtitle, count, tag, tags[], status, size]`  |
+| FeedSubjectCard    | 通用文章主题组件                    | `[url, images[], title, subtitle,align:[top,left,right,bottom], subject:[avatar, title], view,timestamp ]`
 
 
-### `CommonSubjectItem` 的参数说明
+### `SubjectItem` 的参数说明
 | 参数         | 组件参数说明                                        |
 | ------------ | -------------------------------------------------- |
 | avatar       | 头像`url`, 没有 [`url`,`icon`] 的话, 显示为圆形头像  |
@@ -31,6 +32,18 @@
 | status       | 组件右侧状态信息                                    |
 | size         | 组件大小[medium,large], 默认为`medium`, `large` 尺寸可用于动态页面  |
 
+
+### `FeedSubjectCard` 的参数说明
+| 参数         | 组件参数说明                                        |
+| ------------ | -------------------------------------------------- |
+| url          | 大图片链接                                          |
+| images       | 图片列表, 可以放三个并排图片                         |
+| title        | 标题, 由全局 theme 决定                             |
+| subtitle     | 副标题, 由全局 theme 决定                           |
+| align        | 图片的对齐方式 `[left,right,top,bottom]`            |
+| subject      | 主题[用户, 供应商]                                  |
+| view         | 查看次数                                           |
+| timestamp    | 时间                                               |
 
 
 ## 动态页面组件
