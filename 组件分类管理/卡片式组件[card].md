@@ -15,7 +15,8 @@
 | 组件名              | 组件                              | 组件参数说明                                                        |
 | ------------------ | --------------------------------- | ------------------------------------------------------------------ |
 | SubjectItem        | 通用主题组件[标题,副标题,图片,标签,] | `[avatar/icon/url, title, subtitle, count, tag, tags[], status, size]`  |
-| FeedSubjectCard    | 通用文章主题组件                    | `[url, images[], title, subtitle,align:[top,left,right,bottom], subject:[avatar, title], view,timestamp ]`
+| FeedSubjectCard    | 通用社交文章主题组件                    | `[url, images[], title, subtitle,align:[top,left,right,bottom], subject:[avatar, title], view,timestamp ]`
+
 
 
 ### `SubjectItem` 的参数说明
