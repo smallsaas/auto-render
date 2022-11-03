@@ -13,12 +13,12 @@
 ## 列表项子项组件
 > 页面复合组件
 
-| 组件名              | 组件                                               | 组件参数说明                                                                           |
-| ------------------ | -------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| SubjectItem        | 行信息组件[标题,副标题,图片,标签]                     | `[img, tag, title, subtitle, avatar, badge, tags[], status]`                          |
-| ColumnItem         | 列信息组件[图标,标题,副标题,操作按钮],所有元素默认居中  | `[img, tag, title, subtitle, navigation:{icon, label, nav, navoff}, alignment]` |    
-| ChecklistItem      | 清单组件[图标,标签,标题,属性列],属性个数不限制         | `[img, tag, title, subtitle, bullet, checklist[binding, format] ]`                    |
-
+| 组件名              | 组件                                                  | 组件参数说明                                                                           |
+| ------------------ | ----------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| SubjectItem        | 主题信息组件[标题,副标题,图片,标签]                      | `[img, tag, title, subtitle, avatar, badge, tags[], status]`                          |
+| ColumnItem         | 列信息组件[图标,标题,副标题,操作按钮],所有元素默认居中     | `[img, tag, title, subtitle, navigation:{icon, label, nav, navoff}, alignment]` |    
+| ChecklistItem      | 清单组件[图标,标签,标题,属性列],属性个数不限制            | `[img, tag, title, subtitle, bullet, checklist[binding, format] ]`                    |
+| LinearRowItem      | 单行信息组件 [状态条,标题,副标题,状态],状态条颜色由状态决定| `[bar: {color, width}, title, subtitle, sequence, status]`  |
 
 ### `SubjectItem` 的参数说明
 | 参数         | 组件参数说明                                            |
@@ -116,3 +116,15 @@
     ]
 }
 ```
+
+### `LinearRowItem` 的参数说明
+> 仅有文字, 没有图像, 没有`tag`, 通过颜色修饰的简洁组件
+
+| 参数                | 组件参数说明                                    |
+| ------------------- | ---------------------------------------------- |
+| bar                 | 左侧颜色状态条                                  |
+| bar.color           | 状态条颜色,由状态决定,并通过父组件`binding`转换   |
+| bar.width           | 状态条宽度，没有配置用默认值                     |
+| title               | 标题, 由全局 theme 决定                         |
+| subtitle            | 副标题, 由全局 theme 决定                       |
+| sequence            | 接着标题的信息位置                              |
