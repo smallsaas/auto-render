@@ -127,4 +127,5 @@
 | bar.width           | 状态条宽度，没有配置用默认值                     |
 | title               | 标题, 由全局 theme 决定                         |
 | subtitle            | 副标题, 由全局 theme 决定                       |
-| sequence            | 接着标题的信息位置                              |
+| content             | 其他信息内容 (挨着标题)                         |
+| status              | 状态信息                                       |
