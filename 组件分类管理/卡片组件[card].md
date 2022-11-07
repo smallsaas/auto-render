@@ -31,6 +31,7 @@
 | badge        | 用于在标题右则显示数量                                   |
 | tags         | 副标题下面小标签                                        |
 | status       | 组件右侧状态信息                                        |
+| size         | 组件大小`[large,normal,small]`,默认为 `normal`          |
 
 >
 > 以下数据通过`navlist`, `autolist`框架组件通过绑定传入
@@ -43,7 +44,8 @@
     "avatar":"any",
     "badge": 5,
     "tags":["客厅","餐厅"],
-    "status": "待审批"
+    "status": "待审批",
+    "size":"normal"
 }
 ```
 
