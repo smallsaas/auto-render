@@ -8,6 +8,21 @@
 | RowItem          | 一个图标在左侧, 紧靠标题, 右侧是箭头                    | `[img,color,title,nav,group,container,size]`        |
 | BoxItem          | 统计数字在上，标题在下的统计项，无路由属性, 有数据值格式  | `[number,title,format,container,size]`              |
 | ToggleItem       | 用于设置项                                            | `[img,color,title,navon,navoff,container,size]`     |
+| PaletteItem      | 用于单选项，右上角可以显示标记                          | `[tag,palette,color,badge,container,size]`                  |
+
+
+### `PaletteItem` 的参数说明
+| 参数             | 组件参数说明                                       |
+| ---------------- | ------------------------------------------------- |
+| tag              | 标签名称                                           |
+| palette          | 标签颜色色板名称                                    |
+| color            | 颜色值`#`,不是`#`开头为颜色索引名称                  |
+| badge            | 用于在标题右则显示标识内容                           |
+| badge.content    | 显示内容                                           |
+| badge.container  | `css`风格集                                        |
+| badge.cname      | 或传 `css`风格集名称                                |
+| container        | 自定义`css`修饰                                    |
+| size             | 大小选项 `[large,normal,small]`                    |
 
 
 ## 列表项子项组件
