@@ -32,6 +32,16 @@
 | tags         | 副标题下面小标签                                        |
 | status       | 组件右侧状态信息                                        |
 | size         | 组件大小`[large,normal,small]`,默认为 `normal`          |
+| navigation          | 操作按钮定义, 数据类型为`object`                  |
+| navigation.icon     | 按钮图标                                         |
+| navigation.label    | 按钮标题                                         |
+| navigation.container| 按钮容器风格`css`,或风格集名称                    |
+| navigation.nav      | 默认`api`                                       |
+| navigation.switchoff.label     | 切换后标题                             |
+| navigation.switchoff.icon      | 切换后图标                             |
+| navigation.switchoff.container | 切换后图标                             |
+| navigation.switchoff.nav       | 切换`api`                             |
+| navigation.button   | 直接引用框架定义的按钮名称(字符), 或一个组件引用    |
 
 >
 > 以下数据通过`navlist`, `autolist`框架组件通过绑定传入
@@ -57,12 +67,17 @@
 | tag               | 检签风格信息                                        |
 | title             | 标题, 由全局 theme 决定                             |
 | subtitle          | 副标题, 由全局 theme 决定                           |
-| navigation        | 路由信息, 数据类型为`object`                        |
-| navigation.icon   | 操作接口                                           |
-| navigation.label  | 操作标题,与`icon`二选一, 也可以同时展示              |
-| navigation.nav    | 默认`api`                                          |
-| navigation.navoff | 如果是切换操作, 为关闭`api`                         |
 | alignment         | 默认居中 `[center,left,right]`                      |
+| navigation        | 按钮路由信息, 数据类型为 `object`                    |
+| navigation.icon   | 按钮图标                                           |
+| navigation.label  | 按钮标题                                           |
+| navigation.nav    | 默认`api`                                          |
+| navigation.container| 按钮容器风格`css`,或风格集名称                     |
+| navigation.switchoff.label     | 切换后标题                             |
+| navigation.switchoff.icon      | 切换后图标                             |
+| navigation.switchoff.container | 切换后图标                             |
+| navigation.switchoff.nav       | 切换`api`                             |
+| navigation.button   | 直接引用框架定义的按钮名称(字符), 或一个组件引用    |
 
 
 >
