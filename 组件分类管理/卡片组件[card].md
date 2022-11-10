@@ -52,11 +52,15 @@
 | navigation.label    | 按钮标题                                         |
 | navigation.container| 按钮容器风格`css`,或风格集名称                    |
 | navigation.nav      | 默认`api`                                       |
-| navigation.switchoff.label     | 切换后标题                             |
-| navigation.switchoff.icon      | 切换后图标                             |
-| navigation.switchoff.container | 切换后图标                             |
-| navigation.switchoff.nav       | 切换`api`                             |
+| navigation.switchoff.label     | 切换后标题                            |
+| navigation.switchoff.icon      | 切换后图标                            |
+| navigation.switchoff.container | 切换后图标                            |
+| navigation.switchoff.nav       | 切换`api`                            |
 | navigation.button   | 直接引用框架定义的按钮名称(字符), 或一个组件引用    |
+| actions             | 组件右上角的操作列表，灰色小图标靠右排列,大小固定   |
+| actions[].img       | 图标链接                                         |
+| actions[].nav       | 点击图标触发的路由                                |
+
 
 >
 > 以下数据通过`navlist`, `autolist`框架组件通过绑定传入
