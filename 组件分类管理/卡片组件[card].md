@@ -35,6 +35,11 @@
 | ChecklistItem      | 清单组件[图标,标签,标题,属性列],属性个数不限制            | `[img, tag, title, subtitle, bullet, checklist[binding, format] ]`                    |
 | LinearRowItem      | 单行信息组件 [状态条,标题,副标题,状态],状态条颜色由状态决定| `[bar: {color, width}, title, subtitle, sequence, status]`  |
 
+### 关于路由 `nav` 的说明
+- 路由可以是页面的跳转路由，也可以是一个`api`, `api` 通常需要定义`method`,以及`parameters`,  `method`直接放在在`api`前面,如 `GET /api/v1/query/profile?userid=Bob`
+- 参数则通过在`url`后面增加`?`指定。如 `GET /api/v1/query/profile?userid=Bob`
+- `POST`/`PUT` 参数通常是`body`, 也是跟`GET`方式一样通过`?`提供，标准组件或框架基于`method`如果是`POST`或`PUT`自动转换为 `body` 形式提交, 如 `PUT /api/v1/profile/users/Bob?age=23&gentle=M`
+
 ### `SubjectItem` 的参数说明
 | 参数         | 组件参数说明                                            |
 | ------------ | ------------------------------------------------------ |
@@ -48,6 +53,7 @@
 | status       | 组件右侧状态信息                                        |
 | size         | 组件大小`[large,normal,small]`,默认为 `normal`          |
 | navigation          | 操作按钮定义, 数据类型为`object`                  |
+| navigation.status   | 保持按钮状态                                     |
 | navigation.icon     | 按钮图标                                         |
 | navigation.label    | 按钮标题                                         |
 | navigation.container| 按钮容器风格`css`,或风格集名称                    |
