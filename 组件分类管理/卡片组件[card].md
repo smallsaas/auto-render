@@ -131,7 +131,6 @@
 | subjects[].title        | 标题, 由全局 theme 决定                                 |
 | subjects[].tag          | 标题右侧的 tag                                          |
 | subjects[].subheading   | 子标题, 在标题或`tag`的右侧                              |
-| subjects[].bullet       | 信息展示项前端的字符或图标,可以是`https://`               |
 | subjects[].content      | 格式化内容, 支持图标+表情格式化,通过绑定转换               |
 | subjects[].spacer       | 与下一个`subject`的间隔选项`[1x,2x,3x,4x]`,`1x`代表`8rpx`|
 | menus                   | 组件右上角的菜单，一个固定的灰色小图标`..`                |
