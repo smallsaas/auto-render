@@ -1,15 +1,15 @@
 ## 卡片标准组件
 > `badge` 为数字，固定几种风格 (由框架`theme`定义)
 
-| 子类型名称            | 子类型说明                                        | 所有属性                                            |
-| ---------------- | ---------------------------------------------------- | --------------------------------------------------- |
-| MagicItem        | 一个图标在上，标题在下的路由导航栏                      | `[img,color,title,nav,container,size,badge]`              |
-| CardItem         | 一个图标在左，标题再右的路由导航栏                      | `[img,color,title,nav,container,size,badge]`              |
-| SubtitleCardItem | 同`CardItem`, 有副标题属性的路由导航栏                 | `[img,color,title,subtitle,nav,container,size,badge]`     |
-| RowItem          | 一个图标在左侧, 紧靠标题, 右侧是箭头                    | `[img,color,title,nav,group,container,size,badge]`        |
-| BoxItem          | 统计数字在上，标题在下的统计项，无路由属性, 有数据值格式  | `[number,title,format,container,size]`                    |
-| ToggleItem       | 用于设置项                                            | `[img,color,title,navon,navoff,container,size]`           |
-| PaletteItem      | 用于单选项，右上角可以显示标记                          | `[tag,palette,color,badge,container,size]`               |
+| 子类型名称            | 子类型说明                                        | 所有属性                                              |
+| ---------------- | ---------------------------------------------------- | ----------------------------------------------------- |
+| MagicItem        | 一个图标在上，标题在下的路由导航栏                      | `[img,color,title,nav,container,size,badge]`          |
+| CardItem         | 一个图标在左，标题再右的路由导航栏                      | `[img,color,title,nav,container,size,badge]`          |
+| SubtitleCardItem | 同`CardItem`, 有副标题属性的路由导航栏                 | `[img,color,title,subtitle,nav,container,size,badge]` |
+| RowItem          | 一个图标在左侧, 紧靠标题, 右侧是箭头                    | `[img,color,title,nav,container,size,badge]`          |
+| BoxItem          | 统计数字在上，标题在下的统计项，无路由属性, 有数据值格式  | `[number,title,format,container,size]`                |
+| ToggleItem       | 用于设置项                                            | `[img,color,title,navon,navoff,container,size,badge]` |
+| PaletteItem      | 用于单选项，右上角可以显示标记,`palette`颜色色板名称     | `[tag,palette,color,nav,container,size,badge]`        |
 
 
 ### `PaletteItem` 的参数说明
@@ -18,12 +18,12 @@
 | tag              | 标签名称                                           |
 | palette          | 标签颜色色板名称                                    |
 | color            | 颜色值`#`,不是`#`开头为颜色索引名称                  |
+| container        | 自定义`css`修饰                                    |
+| size             | 大小选项 `[large,normal,small]`                    |
 | badge            | 用于在标题右则显示标识内容                           |
 | badge.content    | 显示内容, 可以是数字, 也可以是字符                   |
 | badge.container  | `css`风格集                                        |
 | badge.cname      | 或传 `css`风格集名称                                |
-| container        | 自定义`css`修饰                                    |
-| size             | 大小选项 `[large,normal,small]`                    |
 
 
 ## 列表项子项组件
