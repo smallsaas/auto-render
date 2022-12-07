@@ -8,7 +8,7 @@
 | SubtitleCardItem | 同`CardItem`, 有副标题属性的路由导航栏                 | `[img,color,title,subtitle,nav,container,size,badge]` |
 | RowItem          | 一个图标在左侧, 紧靠标题, 右侧是箭头                    | `[img,color,title,nav,container,size,badge]`          |
 | BoxItem          | 统计数字在上，标题在下的统计项，无路由属性, 有数据值格式  | `[number,title,format,container,size]`                |
-| ToggleItem       | 用于设置项                                            | `[img,color,title,navon,navoff,container,size,badge]` |
+| ToggleItem       | 用于设置项,`nav`查询状态,`navon`开,`navoff`关          | `[img,color,title,nav,navon,navoff,container,size,badge]` |
 | PaletteItem      | 用于单选项，右上角可以显示标记,`palette`颜色色板名称     | `[tag,palette,color,nav,container,size,badge]`        |
 
 
