@@ -33,7 +33,7 @@
 | ------------------ | ----------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | SubjectItem        | 主题信息组件[标题,副标题,图片,标签]                      | `[img,avatar,size, title,badge,tag, subtitle,tags[], status]`                          |
 | MultiSubjectItem   | 多主题信息组件                                         | `[subjects[img,size,avatar, title,tag, subtitle,tags[], content, spacer[1x,2x,3x,4x]], actions:[], notes:[]]`
-| ColumnItem         | 列信息组件[图标,标题,副标题,操作按钮],所有元素默认居中     | `[img,avatar,size, title,tag, subtitle, navigation:{icon, label, nav, navoff}, alignment]` |    
+| ColumnItem         | 列信息组件[图标,标题,副标题,操作按钮],所有元素默认居中     | `[img,avatar,size, title, tag, subtitle, navigation:{icon, label, nav, navoff}, alignment]` |    
 
 
 ### 关于路由 `nav` 的说明
